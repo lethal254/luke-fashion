@@ -15,7 +15,7 @@ const Container = styled.div`
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container className='app'>
+      <Container className="app">
         <Navbar />
         <Carousel />
         <ProductsRows />

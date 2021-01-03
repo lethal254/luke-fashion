@@ -16,6 +16,10 @@ const CardContainer = styled.div`
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   overflow: hidden;
+  transition: transform 700ms;
+  :hover {
+    transform: scale(1.04);
+  }
   @media (max-width: 768px) {
     min-width: 100%;
   }
@@ -39,9 +43,10 @@ function Card() {
   return (
     <CardContainer>
       <Body>
-        <Image src='https://images.pexels.com/photos/2609741/pexels-photo-2609741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' />
+        <Image src="https://images.pexels.com/photos/2609741/pexels-photo-2609741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
         <HeadersH4
-          style={{ fontWeight: "bold", fontSize: "3rem", marginTop: "0.5rem" }}>
+          style={{ fontWeight: "bold", fontSize: "3rem", marginTop: "0.5rem" }}
+        >
           Bomber Jacket
         </HeadersH4>
         <HeadersH4 style={{ fontWeight: "bold", color: "grey" }}>
@@ -52,7 +57,8 @@ function Card() {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur,
         </Paragraphs>
         <Button
-          style={{ width: "100%", backgroundColor: "black", color: "white" }}>
+          style={{ width: "100%", backgroundColor: "black", color: "white" }}
+        >
           ADD TO CART
         </Button>
       </Body>
