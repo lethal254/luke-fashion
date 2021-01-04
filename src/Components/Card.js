@@ -45,12 +45,17 @@ function Card() {
       <Body>
         <Image src="https://images.pexels.com/photos/2609741/pexels-photo-2609741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
         <HeadersH4
-          style={{ fontWeight: "bold", fontSize: "3rem", marginTop: "0.5rem" }}
+          style={{
+            fontWeight: "bold",
+            fontSize: "3rem",
+            marginTop: "0.5rem",
+            color: "black",
+          }}
         >
           Bomber Jacket
         </HeadersH4>
-        <HeadersH4 style={{ fontWeight: "bold", color: "grey" }}>
-          Ksh.300
+        <HeadersH4 style={{ fontWeight: "bold", color: "black" }}>
+          <small>Ksh.</small> 300
         </HeadersH4>
 
         <Paragraphs>
